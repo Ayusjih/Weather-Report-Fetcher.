@@ -21,3 +21,6 @@ A Python command-line application that fetches real-time weather data using the 
 2. **Install the required library** (`requests`):
    ```bash
    pip install requests
+<img width="977" height="323" alt="image" src="https://github.com/user-attachments/assets/13ceefa5-8280-4ebd-b945-45326964cf47" />
+<img width="663" height="306" alt="image" src="https://github.com/user-attachments/assets/fd84ec32-05d6-4b9b-8db6-a578b7dfdde7" />
+
