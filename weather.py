@@ -1,28 +1,17 @@
-# [2025-12-14 23:53:48 IST] File: weather.py
+
 
 import requests
 import sys
 
 def get_api_key():
-    """
-    Retrieves the API key. 
-    IMPORTANT: Replace the placeholder string below with your actual OpenWeatherMap API key.
-    """
-    return "YOUR_API_KEY_HERE"
+    return "08b7d5c11c355c08b28af210adb5e239"
 
 def build_url(city_name, api_key):
-    """
-    Constructs the API URL with query parameters.
-    """
     base_url = "https://api.openweathermap.org/data/2.5/weather"
-    # Using 'metric' units for Celsius
+  
     return f"{base_url}?q={city_name}&appid={api_key}&units=metric"
 
 def fetch_weather_data(city_name, api_key):
-    """
-    Sends the GET request and handles network errors.
-    Returns the JSON response if successful, or None if failed.
-    """
     url = build_url(city_name, api_key)
     
     try:
@@ -46,9 +35,7 @@ def fetch_weather_data(city_name, api_key):
     return None
 
 def display_weather_report(data):
-    """
-    Parses the JSON data and prints the formatted report.
-    """
+    
     if not data:
         return
 
@@ -74,7 +61,7 @@ def main():
     api_key = get_api_key()
     
     # Simple check to ensure user replaced the placeholder
-    if api_key == "YOUR_API_KEY_HERE":
+    if api_key == "":
         print("[!] PLEASE UPDATE THE API KEY IN THE SCRIPT BEFORE RUNNING.")
         return
 
